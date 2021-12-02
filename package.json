@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Restaurant rservaion system with limited Tables and timeslots",
   "main": "app.js",
+  "type": "module",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "null"
   },
   "repository": {
