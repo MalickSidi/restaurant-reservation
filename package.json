@@ -1,0 +1,37 @@
+{
+  "name": "reservation",
+  "version": "1.0.0",
+  "description": "Restaurant rservaion system with limited Tables and timeslots",
+  "main": "app.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MalickSidi/restaurant-reservation.git"
+  },
+  "keywords": [
+    "schedule",
+    "management",
+    "RESTfull",
+    "API"
+  ],
+  "author": "Malick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MalickSidi/restaurant-reservation/issues"
+  },
+  "homepage": "https://github.com/MalickSidi/restaurant-reservation#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
