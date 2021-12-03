@@ -1,8 +1,11 @@
 import { Router } from "express";
-import { getUsers } from "./controllers.js";
+import { getUsers, createUser, loginUser } from "./controllers.js";
+import middleware from "../middlewares/index.js";
 
 const userRouter = Router();
 
-userRouter.get("/", getUsers);
+userRouter.get("/", middleware.auth, getUsers);
+userRouter.post("/", createUser);
+userRouter.post("/login", loginUser);
 
 export default userRouter;
