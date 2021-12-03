@@ -5,8 +5,9 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./src/db/seeding.js && node app.js",
     "dev": "nodemon app.js",
+    "seed": "node ./src/db/seeding.js",
     "test": "null"
   },
   "repository": {

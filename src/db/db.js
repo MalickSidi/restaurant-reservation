@@ -1,27 +1,13 @@
 import pg from "pg";
-import tableQueries from "./query.js";
 
 const { Pool } = pg;
 
 const localConfig = {
-  user: "admin",
-  password: "admin1234",
-  host: "localhost",
-  port: "2345",
-  database: "restaurant",
-};
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  database: process.env.DB_NAME,
+} ;
 
 export const pool = new Pool(localConfig);
-
-pool.query(tableQueries.users, (err, res) => {
-  if (err) console.log(err);
-});
-
-pool.query(tableQueries.tables, (err, res) => {
-  if (err) console.log(err);
-});
-
-pool.query(tableQueries.reservation, (err, res) => {
-  if (err) console.log(err);
-  console.log("Create all tables");
-});

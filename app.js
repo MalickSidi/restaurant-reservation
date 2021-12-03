@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import userRouter from "./src/users/routes.js";
+import reservationRouter from "./src/reservation/routes.js";
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/reservation", reservationRouter);
 
 app.get("/", (req, res) => {
   res.status("200").json({ message: "It's Working for now" });

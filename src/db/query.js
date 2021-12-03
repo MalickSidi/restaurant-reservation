@@ -11,14 +11,15 @@ tableQueries.users =
 
 tableQueries.tables =
   "CREATE TABLE IF NOT EXISTS rest_tables (\
-    table_id INT PRIMARY KEY,\
+    table_id SERIAL PRIMARY KEY,\
     table_seets INT NOT NULL)";
 
 tableQueries.reservation =
   "CREATE TABLE IF NOT EXISTS reservation (\
-    id INT PRIMARY KEY,\
-    timeslotes TIMESTAMP,\
-    table_id INT REFERENCES rest_tables (table_id)\
+    id SERIAL PRIMARY KEY,\
+    time_start TIMESTAMP NOT NULL,\
+    time_end TIMESTAMP NOT NULL,\
+    table_id INT REFERENCES rest_tables (table_id) NOT NULL\
     )";
 
 export default tableQueries;
