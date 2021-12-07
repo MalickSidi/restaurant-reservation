@@ -7,7 +7,7 @@ Restaurant Tables
 - 1 Table with 6 seats.
 
 ### Run The app
-1. Setup the database
+1. Setup the database following `src/db/db.sql`
   - Make sure you have these environments varibles:
     - `DB_USER`
     - `DB_PASSWORD`
