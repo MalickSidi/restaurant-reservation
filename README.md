@@ -20,7 +20,7 @@ Restaurant Tables
 1. use: `npm start` to start the api
 
 ### Available API endpoins
-1. GET `/api/v1/users` __Authorization__:acces_token
+1. GET `/api/v1/users` __Authorization__: acces_token
   - Return list of all restruant employes
 2. POST `/api/v1/users` 
   - Create new employ
@@ -29,7 +29,7 @@ Restaurant Tables
 3. POST `/api/v1/users/login`
   - Body { user_number, user_password }
   - return access_token
-4. GET `/api/v1/reservation` __Authorization__:acces_token
+4. GET `/api/v1/reservation` __Authorization__: acces_token
   - Return all reservaions
-5. POST `/api/v1/reservation` __Authorization__:acces_token
+5. POST `/api/v1/reservation` __Authorization__: acces_token
   - body {start, end, seets}
