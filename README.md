@@ -7,4 +7,6 @@ Restaurant Tables
 - 1 Table with 6 seats.
 
 ### Run The app
-`docker-compose .`
+1. Setup the database
+  - 
+3. ``
