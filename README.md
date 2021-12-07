@@ -16,7 +16,8 @@ Restaurant Tables
     - `DB_NAME`
 
 3. For JWT you need to have environment varible: `ACCESS_TOKEN_SECRET` with any random text value
-4. use: `npm start' to start the api
+4. use: `npm i` to install all required dependencies
+1. use: `npm start` to start the api
 
 ### Available API endpoins
 1. GET `/api/v1/users` __Authorization__:acces_token
